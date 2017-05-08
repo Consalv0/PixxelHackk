@@ -30,6 +30,6 @@ public class ControllerMovement : MonoBehaviour {
 		}
 
     transform.Translate(x, 0, 0);
-    transform.Translate(0, z, 0);
+    transform.Translate(0, 0, z);
 	}
 }

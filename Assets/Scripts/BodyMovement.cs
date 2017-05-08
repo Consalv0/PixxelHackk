@@ -15,6 +15,7 @@ public class BodyMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
+		transform.rotation = Quaternion.Euler(transform.rotation.x + 45, transform.rotation.y, transform.rotation.z);
 		Vector3 bodyPos = Camera.main.WorldToScreenPoint(transform.position);
 		Vector3 dir = Input.mousePosition - bodyPos;
 
@@ -27,6 +28,5 @@ public class BodyMovement : MonoBehaviour {
 
 		Quaternion newRotation = Quaternion.AngleAxis(newAngle, Vector3.back);
 		transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, rotationSpeed * 0.01f);
-		transform.Rotate(45, 0, 0);
 	}
 }

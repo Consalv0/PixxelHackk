@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e05d156084ff34fa39c1667bf867e670
-timeCreated: 1493852188
+guid: 512c3dddee87e4348b27904ba943727f
+timeCreated: 1493963639
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -11,7 +11,7 @@ TextureImporter:
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
-    borderMipMap: 0
+    borderMipMap: 1
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -19,7 +19,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 1
+  isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
