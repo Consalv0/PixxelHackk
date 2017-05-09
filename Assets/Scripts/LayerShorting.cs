@@ -12,7 +12,7 @@ public class LayerShorting : MonoBehaviour {
   }
 
   void Update() {
-		boundHeight = sprite.bounds.size.z * 0.5f;
+		boundHeight = sprite.bounds.size.z * 0.4142f;
   	if (sprite)
 			posZ = -(int)Mathf.Floor(transform.position.z - boundHeight * layerDetail);
   		sprite.sortingOrder = posZ;

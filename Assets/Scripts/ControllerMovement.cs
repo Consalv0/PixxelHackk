@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ControllerMovement : MonoBehaviour {
-	public float MovementSpeed;
-	public float SprintMultiplier;
+	public float MovementSpeed = 10;
+	public float SprintMultiplier = 1.6f;
 	bool sprint = false;
 
 	private float x = 0;

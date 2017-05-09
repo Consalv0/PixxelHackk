@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
     public GameObject focusOn;
-    public float distance;
+    public float distance = 10;
+
     private Vector3 offset;
     private Vector3 velocity = Vector3.zero;
+    private Quaternion rotationVector;
+    private Vector3 distVector;
 
   void Start () {
+    rotationVector = Quaternion.Euler(45, 0, 0);
 	}
 
 	void LateUpdate () {
+    distVector = new Vector3(0, 0, distance);
     var ObjectPosition = focusOn.transform.position;
-    var rotationVector = Quaternion.Euler(45, 0, 0);
-    var distVector = new Vector3(0, 0, distance);
     distVector = Quaternion.AngleAxis(45, Vector3.right) * distVector;
     ObjectPosition = ObjectPosition - distVector;
     transform.position = Vector3.SmoothDamp(transform.position, ObjectPosition, ref velocity, 0.2f);
